@@ -123,10 +123,7 @@ const firebaseConfig = {
             let fechas = datesArr.slice(1, 6)
     
             var responsiveOptions = 
-                [['screen and (min-width: 300px) and (max-width: 1024px)',{
-                    width: 200,
-                    height: 125,
-                }]]
+                [['screen and (min-width: 641px) and (max-width: 1024px)',{}]]
 
             var datachart = {
                 labels: fechas,
