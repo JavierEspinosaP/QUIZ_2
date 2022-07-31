@@ -171,7 +171,44 @@ document.getElementById("logout").addEventListener("click", signOutGoogle);
 
 
 
+// const signUpUser = (email, password) => {
+    
 
+//     firebase.auth()
+//     .createUserWithEmailAndPassword(email, password)
+//     .then((userCredential) => {
+//       // Signed in
+//       form1.classList.remove('form1show')
+//       form1.classList.add('form1hide')
+//       form2.classList.remove('form2hide')
+//       form2.classList.add('form2show')
+//       let user = userCredential.user;
+//       console.log(`se ha registrado ${user.email} ID:${user.uid}`)
+     
+//       // ...
+//       // Guarda El usuario en Firestore
+//       createUser({
+//         id:user.uid,
+//         email:user.email
+//       });
+
+//       swal({
+//           title: `Registrado '${user.email.split('@')[0]}'`,
+//           icon: "success",
+//           text: "Podrás acceder a rankings y gráficas de tus puntuaciones",
+//           button: "Ok",
+//         });
+
+//     })
+//     .catch((error) => {
+//       swal({
+//           title: `Usuario ya existente`,
+//           icon: "error",
+//           text: "Ya existe un usuario con este correo",
+//           button: "Ok",
+//         });
+//     });
+// };
 
 
 
@@ -196,6 +233,12 @@ const signUpUser = (email, password) => {
                 id: user.uid,
                 email: user.email
             });
+                swal({
+          title: `Registrado '${user.email.split('@')[0]}'`,
+          icon: "success",
+          text: "Podrás acceder a rankings y gráficas de tus puntuaciones",
+          button: "Ok",
+        });
 
         })
         .catch((error) => {

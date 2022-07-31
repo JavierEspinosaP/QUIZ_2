@@ -43,8 +43,9 @@
             <input id="submitform1" type="submit" value="Sign In">
         </form>
 
-
-
+        <ol id="ranking"></ol>
+        <button onclick="orderScores()" id="rankingBtn">Ranking</button>
+        
         <form id="form2" class="form2show" action="#" method="POST">
             <h3 id="h3form2">Sign up</h3>
             <label for="email2">Email:</label><br>
@@ -59,7 +60,7 @@
         <button onclick="login()" id="google"><img
                 src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png"
                 style="height: 30px"></button><br>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </div>
 
     <button id="logout" onclick="location.reload()">Logout</button>
@@ -105,14 +106,8 @@
 
     <button class="btnHide" id="submit">Siguiente</button>
 
-    <!-- <ul id="ranking"></ul> -->
-
-
-    <!-- ------------------------------------------------ -->
-
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
     <script src="./script.js"></script>
